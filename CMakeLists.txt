@@ -12,9 +12,7 @@ foreach(file ${SOURCE_FILES})
     get_filename_component(name ${dir} NAME)
 
     # Cria um executável para cada exercício
-    add_executable(${name} ${file}
-            c/1016_distance/main.c
-            c/1017_fuel_spent/main.c)
+    add_executable(${name} ${file})
 
     # Linka a biblioteca matemática
     target_link_libraries(${name} m)
